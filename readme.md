@@ -1,7 +1,7 @@
 # MangaFox Scraper (fork by Besatnias)
-The [original scraper](https://github.com/iamjoey/mangafox-scraper) was made by [iamjoey](https://github.com/iamjoey)
+The [original scraper](https://github.com/iamjoey/mangafox-scraper) was made by [iamjoey](https://github.com/iamjoey). I forked it and improved it for my own use, since I needed some additional information.
 
-Returns data from MangaFox in json format
+It returns data from MangaFox in `json` format
 
 ## Prerequisites
 * install Node
