@@ -66,13 +66,13 @@ If there are pages, it goes `/directory/${modifier}/${pagenum}.htm` (ex.: `/dire
 | `/directory` | Leave blank to see all mangas in your preferred order | `/directory` |
 | `/directory/new` | See newest published manga. 
 
-Available statuses for `/directory/:status`:
+**Available statuses** for `/directory/:status`:
 All (leave blank), updated, ongoing, completed
 
-Available genres for `/directory/:genre`:
+**Available genres** for `/directory/:genre`:
 All (leave blank), adult, comedy, drama, fantasy, harem, horror, martial-arts, mecha, one-shot, romance, sci-fi, shoujo, shounen, slice-of-life, sports, tragedy, yaoi, action, adventure, doujinshi, ecchi, gender-bender, historical, josei, mature, mystery, psychological, school-life, seinen, shoujo-ai, shounen-ai, smut, supernatural, webtoons, yuri
 
-Available letters for `/directory/:letter`:
+**Available letters** for `/directory/:letter`:
 All (leave blank), #, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
 
 \# is for numbers and special characters
