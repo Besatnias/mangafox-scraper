@@ -20,10 +20,10 @@ Alternatively, if you're super lazy and don't care about the destruction of your
 
 ## Routes
 
-All paths are /manga/path (f. ex.: /manga/directory/sci-fi) but I will only list what comes after manga (f. ex.: /directory/sci-fi)
+All paths are `/manga/path` (f. ex.: `/manga/directory/sci-fi`) but I will only list what comes after manga (f. ex.: `/directory/sci-fi`)
 
-Everything in /directory defaults to popularity and can be modified by ?az (alphabetical), ?rating and ?latest (chapters)
-If there are pages, it goes /directory/${modifier}/${pagenum}.htm or, if there is no modifier, /directory/${pagenum}.htm
+Everything in `/directory` defaults to popularity and can be modified by `?az` (alphabetical), `?rating` and `?latest` (chapters)
+If there are pages, it goes `/directory/${modifier}/${pagenum}.htm` or, if there is no modifier, `/directory/${pagenum}.htm`
 
 
 ### /releases/:id
