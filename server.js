@@ -18,7 +18,7 @@ manga.get('/all', cors(), function(req, res) {
     res.sendFile(path.join(__dirname + '/all.json'));
 });
 
-// releases/1.htm => Latest manga releases by page (newest to oldest)
+// releases/1 => Latest manga releases by page (newest to oldest)
 manga.get('/releases/:id', cors(), function(req, res) {
     request('http://mangafox.me/releases/' + req.params.id + '.htm', function(err, response, body) {
 
