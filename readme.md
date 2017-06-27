@@ -28,6 +28,14 @@ All paths are `/manga/path` (f. ex.: `/manga/directory/sci-fi`) but I will only 
 Everything in `/directory` defaults to popularity and can be modified by `?az` (alphabetical), `?rating` and `?latest` (chapters)
 If there are pages, it goes `/directory/${modifier}/${pagenum}.htm` or, if there is no modifier, `/directory/${pagenum}.htm`
 
+### Index
+
+* [/releases/:id](#releasesid)
+* [/details/:name)(#detailsname)
+* [/read/:name/:volume?/:chapter/:id](#readnamevolumechapterid)
+* [/directory](#directory)
+* [/search/:query](#searchquery)
+* [/all](#all)
 
 ### /releases/:id
 
