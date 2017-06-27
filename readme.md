@@ -31,7 +31,7 @@ If there are pages, it goes `/directory/${modifier}/${pagenum}.htm` or, if there
 ### Index
 
 * [/releases/:id](#releasesid)
-* [/details/:name)(#detailsname)
+* [/details/:name](#detailsname)
 * [/read/:name/:volume?/:chapter/:id](#readnamevolumechapterid)
 * [/directory](#directory)
 * [/search/:query](#searchquery)
