@@ -1,7 +1,10 @@
 # MangaFox Scraper (fork by Besatnias)
+
+It returns data from MangaFox in `json` format.
+
 The [original scraper](https://github.com/iamjoey/mangafox-scraper) was made by [iamjoey](https://github.com/iamjoey). I forked it and improved it for my own use, since I needed some additional information.
 
-It returns data from MangaFox in `json` format
+One thing to note is that I don't know about MangaFox's regulations. If you run this too much, you may (possibly) get the IP you used banned from MangaFox, so be careful with your iterations if you intend to use this for a long time.
 
 ## Prerequisites
 * install Node
@@ -76,3 +79,15 @@ All (leave blank), adult, comedy, drama, fantasy, harem, horror, martial-arts, m
 All (leave blank), #, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
 
 \# is for numbers and special characters
+
+### /search/:query
+
+| Variable | Explanation | Example |
+| --- | --- | --- |
+| `:query` | Regular expression (RegExp) to search all.json | `one piece` or `on.+ece` |
+
+Please note that this iterates approximately 20,000 results, so if you run it many times in a row, your program could get slow depending on your specs.
+
+### /all
+
+Every hour of runtime, a cronjob creates a `json` file with an array that contains the items found in MangaFox's index in http://mangafox.me/manga/. As of 26/06/2017 23:40 (UTC-4), it contains 19,288 results and is 2,745 KB. It will logically increase over time as more works are published on MangaFox.
