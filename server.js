@@ -127,7 +127,7 @@ manga.get('/details/:name', cors(), function(req, res) {
         });
 
         $('#title').filter(function() {
-            json.name = $('h1').text();
+            json.name = $('title').text().split(' Manga - ')[0];
             json.summary = $('.summary').text();
         });
         json.author = $('#title td:nth-child(2) > a').text()
