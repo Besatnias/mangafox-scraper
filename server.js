@@ -199,6 +199,22 @@ manga.get('/read/:name/:volume?/:chapter/:id', cors(), function(req, res) {
         res.send(json);
     });
 });
+
+manga.get('/search/:query', function(req, res) {
+    const q = req.params.query;
+    console.log(q)
+    const json = fs.readFileSync("all.json", "utf8");
+    const all = JSON.parse(json)
+    const results = []
+    const reg = new RegExp(q, "gi");
+    all.forEach(x=>{
+        if (reg.test(x.name)) {
+            results.push(x)
+        }
+    })
+    res.send(results)
+})
+
 app.use('/manga', manga);
 
 new CronJob('0 * * * *', function() {
@@ -211,12 +227,12 @@ new CronJob('0 * * * *', function() {
             var aElement = $(links[i]);
             var name = aElement.text();
             var link = aElement.attr('href');
-            var manga_id = aElement.attr('rel');
+//            var manga_id = aElement.attr('rel');
 
             list.push({
                 name: name,
-                link: link,
-                manga_id: manga_id
+                link: link/*,
+                manga_id: manga_id*/
             });
         }
         fs.writeFile('all.json', JSON.stringify(list, null, 4), function(){
