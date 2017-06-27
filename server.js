@@ -227,12 +227,12 @@ new CronJob('0 * * * *', function() {
             var aElement = $(links[i]);
             var name = aElement.text();
             var link = aElement.attr('href');
-//            var manga_id = aElement.attr('rel');
+            var manga_id = aElement.attr('rel');
 
             list.push({
                 name: name,
-                link: link/*,
-                manga_id: manga_id*/
+                link: link,
+                manga_id: manga_id
             });
         }
         fs.writeFile('all.json', JSON.stringify(list, null, 4), function(){
